@@ -1,0 +1,7 @@
+pytrips>=0.5.0
+anytree
+jsontrips
+flask
+flask_wtf
+wtforms
+gunicorn
