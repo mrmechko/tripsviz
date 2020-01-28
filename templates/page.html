@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <form method="POST" action="/word">
+            {{ form.csrf_token }}
+            {{ form.name.label }} {{ form.name(size=20) }}
+            <input type="submit" value="go">
+        </form>
+        <div id="container">
+            {{ svg|safe }}
+        </div>
+    </body>
+</html>
