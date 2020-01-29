@@ -24,6 +24,8 @@ def tree(t):
 def word():
     form = WordLookup()
     if form.validate_on_submit():
-        path = ont().get_word_graph(form.name.data).graph()
+        path = ont().get_word_graph(form.name.data, use_stop=False)
+        path.ont = ont()
+        path = path.graph()
         return render_template("page.html", svg=path.pipe().decode().strip(), form=form)
     return render_template("page.html", svg="", form=form)
