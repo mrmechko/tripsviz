@@ -1,6 +1,6 @@
 pytrips>=0.5.11
 anytree
-jsontrips
+jsontrips>=0.13.11
 flask
 flask_wtf
 wtforms
