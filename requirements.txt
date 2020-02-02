@@ -1,4 +1,4 @@
-pytrips>=0.5.11
+pytrips>=0.5.12
 anytree
 jsontrips>=0.13.11
 flask
