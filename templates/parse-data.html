@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Work+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/graph.css" />
+    </head>
+    <body>
+        <form method="POST" action="/parse">
+            {{ form.csrf_token }}
+            {{ form.sentence.label }} {{ form.sentence(size=80) }}
+            {{ form.parser.label }} {{ form.parser(size=80) }}
+            <input type="submit" value="go">
+        </form>
+        <div>
+            {{ parse | safe }}
+        </div>
+    </body>
+</html>
